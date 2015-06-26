@@ -1,0 +1,22 @@
+img{
+  width:100%;
+}
+h2{
+  font-size: 30px;
+  font-color: black;
+  text-align: left;
+}
+p{
+  font-size: 30px;
+  font-style: bold;
+}
+form{
+  font-size:30px;
+}
+button{
+  font-size:30px;
+}
+
+.section {
+  padding-top: 5%;
+}

@@ -13,36 +13,28 @@
   <link rel="stylesheet" href="style.css">
 
   <title>Bootstrap Boilerplate</title>
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
+
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#about">About me</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#background">Background</a></li>
+  </ul>
   <div class="container">
     <div class="jumbotron">
   <h1>Alison's blog!</h1>
-  <p>This is my second day at WDI!</p>
+  <p>WDI is cool!</p>
 </div>
-    <div class="row">
-      <h1>My second day</h1>
-      <style>
-      h1{
-        font-size: 40px;
-        color: blue;
-        text-align:center;
-      }
-      img{
-        width:100%;
-      }
-      h2{
-        font-size: 30px;
-        font-color: black;
-        text-align: left;
-      }
-      </style>
     </div>
     <div class="row">
       <div class="col-sm-6">
         <img src="placeit.jpg">
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 section" id="about">
+        <button>About me</button>
         <h2>I like WDI!</h2>
         <h2>WDI is great!</h2>
         <h2>It's a great day!</h2>
@@ -51,7 +43,8 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-6 section" id="projects">
+        <button>Projects</button>
         <h2>I like WDI!</h2>
         <h2>WDI is great!</h2>
         <h2>It's a great day!</h2>
@@ -66,14 +59,16 @@
       <div class="col-sm-6">
         <img src="http://img07.deviantart.net/a85d/i/2013/022/0/3/san_francisco_city_by_tt83x-d5seu41.jpg">
       </div>
-      <div class="col-sm-6">
-        <h2>I like WDI!</h2>
-        <h2>WDI is great!</h2>
-        <h2>It's a great day!</h2>
-        <h2>I had a great day at WDI.</h2>
-        <h2>I hope it'll be better tomorrow!</h2>
-      </div>
+      <div class="col-sm-6 section" id="background">
+      <button>Background</button>
+      <form>
+      Subject: <input type="text" value="" size="25" maxlength="50" id="subject">
+      Email: <input type="text" value="" size="25" maxlength="50" id="email">
+      Message: <input type="text" value="" size="25" maxlength="50" id="message"/>
+      <button id="contactButton">Submit</button>
+      </form>
     </div>
   </div>
+  <script src="script.js" type="text/javascript"></script>
 </body>
 </html>
